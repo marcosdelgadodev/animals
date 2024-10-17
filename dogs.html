@@ -12,25 +12,14 @@
 
     <main class="container">
         <h1>Home | Dogs</h1>
-        <a href="/">Cats</a>
-        <a href="/dogs.html">Dogs</a>
-        <a href="/cows.html">Cows</a>
-        <p>this a my first project with git by mourdev</p>
-        <img src="https://i.gifer.com/ZKZg.gif"  style="border-radius: 5px;" id="image" alt="Love Git">
+        <a href="./index.html">Cats</a>
+        <a href="./dogs.html">Dogs</a>
+        <a href="./cows.html">Cows</a>
+        <p>this a my first project with git by marcosdelgadodev</p>
+        <img src="https://i.gifer.com/ZKZg.gif" data-api="https://dog.ceo/api/breeds/image/random"
+            style="border-radius: 5px;" id="image" alt="Love Git">
     </main>
-<script>
-    const image = document.querySelector('#image')
-
-    window.onload = async ()=>{
-        const response = await fetch('https://dog.ceo/api/breeds/image/random')
-        const json = await response.json()
-
-        console.log('load', json.message)
-        image.setAttribute('src', json.message)
-    }
-
-
-</script>
+    <script src="script.js"></script>
 </body>
 
 </html>
